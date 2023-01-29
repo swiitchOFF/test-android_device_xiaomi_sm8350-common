@@ -289,8 +289,12 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor
+    android.hardware.keymaster@4.1.vendor 
 
+# Libgui
+PRODUCT_PACKAGES += \
+    libgui_vendor
+    
 ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
 # LiveDisplay
 PRODUCT_PACKAGES += \
